@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script> $(document).ready(function(){
+		$('div.slideDown p').slideUp();
+		$('div.fadeIn p').fadeOut();
+		$('button.click').click(function(){
+			$('div.click').html('<p>you clicked a button</p>');
+		})
+		$('button.hide').click(function(){
+			$('div.hide p').hide();
+		})
+		$('button.show').click(function(){
+			$('div.hide p').show();
+		})
+		$('button.toggle').click(function(){
+			$('div.toggle p').toggle();
+		})
+		$('button.slideDown').click(function(){
+			$('div.slideDown p').slideDown();
+		})
+		$('button.slideUp').click(function(){
+			$('div.slideUp p').slideUp();
+		})
+		$('button.slideToggle').click(function(){
+			$('div.slideToggle p').slideToggle();
+		})
+		$('button.fadeIn').click(function(){
+			$('div.fadeIn p').fadeIn();
+		})
+		$('button.fadeOut').click(function(){
+			$('div.fadeOut p').fadeOut();
+		})
+		$('button.addClass').click(function(){
+			$('div.addClass p').addClass('red');
+		})
+		$('button.before').click(function(){
+			$('div.before p').before("<p>HERE IS SOME NEW TEXT</p>");
+		})
+		$('button.after').click(function(){
+			$('div.after p').after("<p>HERE IS SOME NEW TEXT</p>");
+		})
+		$('button.append').click(function(){
+			$('div.append p').append("<p>HERE IS SOME NEW TEXT</p>");
+		})
+		$('button.html').click(function(){
+			$('div.html p').html("<p>HERE IS SOME NEW TEXT</p>");
+		})
+		$('button.attr').click(function(){
+			$('div.attr p').attr("class", "red");
+		})
+		$('button.val').click(function(){
+			var value = $('div.val input').val();
+			$('div.val p').text( value );
+		})
+		$('button.text').click(function(){
+			var value = "you clicked the .text button and changed the text!";
+			$('div.text p').text( value );
+		})
+		$('button.data').click(function(){
+			var value = $('div.data input').val();
+			$('div.data span:first').text( value );
+		})
+
+
+	}); </script>
+</head>
+<body>
+	<div class="click">
+		<button class="click">.click</button>
+	</div>
+	<div class="hide">
+		<button class="hide">.hide</button>
+		<p>let's hide this text</p>		
+	</div>
+	<div class="show">
+		<button class="show">.show</button>
+		<p>let's show that text again!</p>		
+	</div>
+	<div class="toggle">
+		<button class="toggle">.toggle</button>		
+		<p>toggle this text on and off by pressing the button labeled ".toggle"</p>
+	</div>
+	<div class="slideDown">
+		<button class="slideDown">.slideDown</button>
+		<p>make this text slide down by pressing the button labeled ".slideDown"</p>		
+	</div>
+	<div class="slideUp">
+		<button class="slideUp">.slideUp</button>
+		<p>make this text slide up by pressing the button labeled ".slideUp"</p>
+	</div>
+	<div class="slideToggle">
+		<button class="slideToggle">.slideToggle</button>
+		<p>make this text slide toggle by pressing the button labeled ".slideToggle"</p>		
+	</div>
+	<div class="fadeIn">
+		<button class="fadeIn">.fadeIn</button>
+		<p>make this text fade in by pressing the button labeled ".fadeIn"</p>		
+	</div>
+	<div class="fadeOut">
+		<button class="fadeOut">.fadeOut</button>
+		<p>make this text fade out by pressing the button labeled ".fadeOut"</p>		
+	</div>
+	<div class="addClass">
+		<button class="addClass">.addClass</button>	
+		<p>add the class "red" to this paragraph by pressing the button labeled ".addClass"</p>	
+	</div>
+	<div class="before">
+		<button class="before">.before</button>
+		<p>add text before this paragraph by pressing the button labeled ".before"</p>		
+	</div>
+	<div class="after">
+		<button class="after">.after</button>
+		<p>add text after this paragraph by pressing the button labeled ".after"</p>		
+	</div>
+	<div class="append">
+		<button class="append">.append</button>
+		<p>append text to this paragraph by pressing the button labeled ".append"</p>		
+	</div>
+	<div class="html">
+		<button class="html">.html</button>
+		<p>replace this paragraph with new HTML by pressing the button labeled ".html"</p>		
+	</div>
+	<div class="attr">
+		<button class="attr">.attr</button>	
+		<p>set an attribute of this text by pressing the button labeled ".attr"</p>	
+	</div>
+	<div class="val">
+		<button class="val">.val</button><input type="text" value="type here and press the button to set a value">
+		<p></p>		
+	</div>
+	<div class="text">
+		<button class="text">.text</button>
+		<p>make this text change by pressing the button labeled ".text"</p>		
+	</div>
+	<div class="data">
+		<button class="data">.data</button> <input type="text" value="HERE!!!">
+		<p>add data <span>here</span> by clicking the button labeled ".data"</p>		
+	</div>
+
+</body>
+</html>

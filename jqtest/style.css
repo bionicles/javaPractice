@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	height: 45px;
+	width: 800px;
+	border: 1px solid silver;
+	background: black;
+	padding: 5px;
+}
+
+p{
+	background: white;
+	color: black;
+}
+
+button{
+	background: blue;
+	color: orange;
+	padding: 5px;
+}
+
+.red{
+	color: red;
+}
+
+input{
+	width: 300px;
+}
